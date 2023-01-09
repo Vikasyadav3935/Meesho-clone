@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "507861284489",
+    "project_id": "meesho-622fb",
+    "storage_bucket": "meesho-622fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507861284489:android:aebb04d487f5506d047858",
+        "android_client_info": {
+          "package_name": "com.masaischool.meeshoclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507861284489-b8jks11hhiei2hfo17d94i1pkbf2b9h7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOsQ0extLYOgFY905_ks_JR2iPo9e7pC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507861284489-b8jks11hhiei2hfo17d94i1pkbf2b9h7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
