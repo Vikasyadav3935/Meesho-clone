@@ -279,6 +279,7 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
       implementation 'androidx.multidex:multidex:2.0.1' 
+       implementation 'com.google.android.gms:play-services-safetynet:18.0.1'
      // Import the Firebase BoM
   implementation platform('com.google.firebase:firebase-bom:31.1.1')
     //noinspection GradleDynamicVersion
