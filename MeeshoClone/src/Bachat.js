@@ -74,6 +74,11 @@ const Bachat=()=>{
                     </Text>
                 </View>
             </View>
+            <View>
+                
+            </View>
+
+
        
         </View>
     )
