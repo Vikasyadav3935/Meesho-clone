@@ -17,6 +17,8 @@ const theme = {
     gray: "#cfcdcd",
     textGray: "gray",
     catBtn: "white",
+    offerBatch: "#ccffcc",
+    ratingBatch: "#00e673",
   },
 };
 

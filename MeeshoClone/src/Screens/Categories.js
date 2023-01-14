@@ -10,7 +10,8 @@ import CatIcon from '../components/catIcon'
 
 
 
-const Categories = () => {
+const Categories = ({ navigation }) => {
+  
   const [con, setCon] = useState("Women Ethnic");
   const [cat, setCat] = useState(Women_Ethnic_Data);
   const theme = useTheme();
@@ -62,7 +63,14 @@ const Categories = () => {
 
           <SectionList
             ListEmptyComponent={() => (
-              <View style={{height:1000,flex:1,justifyContent:'center',alignItems:"center"}}>
+              <View
+                style={{
+                  height: 1000,
+                  flex: 1,
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
                 <Text> Empty..</Text>
               </View>
             )}
@@ -74,7 +82,12 @@ const Categories = () => {
                 crossAxisCount={2}
                 data={item.list}
                 renderItem={({ item }) => (
-                  <CatIcon title={item.name} image={item.image} />
+                  <CatIcon
+                    title={item.name}
+                    image={item.image}
+                     id={item.id}
+                     navigation={navigation}
+                  />
                 )}
               />
             )}
@@ -95,7 +108,7 @@ const Categories = () => {
       </View>
     </View>
   );
-}
+};
 
 export default Categories
 const styles = StyleSheet.create({
