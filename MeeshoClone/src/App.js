@@ -13,9 +13,9 @@ export default function App() {
    
       <StatusBar style="auto" />
       {/* <Profile/> */}
-     {/* <Account/> */}
+     <Account/>
      {/* <Home/> */}
-     <Cart/>
+     {/* <Cart/> */}
     </View>
   );
 }
