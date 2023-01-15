@@ -169,6 +169,9 @@ const styles = StyleSheet.create({
       marginHorizontal:5,
       color:'#0009',
       fontWeight:'700'
+    },
+    single:{
+      
     }
 
   });

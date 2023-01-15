@@ -1,4 +1,4 @@
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import Entypo from "react-native-vector-icons/Entypo";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import CircleLine from "./CircleLine";
@@ -7,8 +7,8 @@ const Cart = () => {
   return (
     <View style={{ backgroundColor: "#ffff" }}>
       <CircleLine />
-      
-      <View style={{marginTop:60}}>
+
+      <View style={{ marginTop: 60 }}>
         <View
           style={{
             flexDirection: "row",
@@ -23,7 +23,7 @@ const Cart = () => {
             style={{ width: 70, height: 100 }}
             resizeMode="contain"
           />
-          <View style={{marginRight:10}}>
+          <View style={{ marginRight: 10 }}>
             <Text style={{ marginVertical: 2, fontSize: 15 }}>
               Kids - Boys Black Pu Casual Wat...
             </Text>
@@ -56,7 +56,7 @@ const Cart = () => {
               <Text
                 style={{
                   fontSize: 18,
-                  color: "#f43397",
+                  color: "",
                   letterSpacing: 0.5,
                   fontFamily: "Monsterrat",
                 }}
@@ -86,33 +86,91 @@ const Cart = () => {
           </Text>
         </View>
       </View>
-      <View  style={{flexDirection:'row',justifyContent:'space-between',borderColor: "#00000820", borderBottomWidth: 7,}}>
-        <Text style={{margin:15}}>
-            Wishlist
-        </Text>
-        <Text style={{margin:15}}>
-        <Entypo name="chevron-right" size={20} color='#0000008400' />
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          borderColor: "#00000820",
+          borderBottomWidth: 7,
+        }}
+      >
+        <Text style={{ margin: 15 }}>Wishlist</Text>
+        <Text style={{ margin: 15 }}>
+          <Entypo name="chevron-right" size={20} color="#0000008400" />
         </Text>
       </View>
-      
+
       <View>
-        <Text style={{marginHorizontal:14,marginVertical:10,fontSize:15}}>Price Details (1 Item)</Text>
-        <View style={{flexDirection:'row',justifyContent:'space-between'}}>
-        <Text style={{marginHorizontal:14,marginVertical:10,fontSize:13,color:'#00000860'}}>Total Product Price</Text>
-        <Text style={{marginHorizontal:14,marginVertical:10}}>+ 175</Text>
+        <Text
+          style={{ marginHorizontal: 14, marginVertical: 10, fontSize: 15 }}
+        >
+          Price Details (1 Item)
+        </Text>
+        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+          <Text
+            style={{
+              marginHorizontal: 14,
+              marginVertical: 10,
+              fontSize: 13,
+              color: "#00000860",
+            }}
+          >
+            Total Product Price
+          </Text>
+          <Text style={{ marginHorizontal: 14, marginVertical: 10 }}>
+            + 175
+          </Text>
         </View>
-       <View  style={{borderColor:'#00000870',borderBottomWidth:.5}} />
-       <View  style={{flexDirection:'row',justifyContent:'space-between'}}>
-        <Text style={{marginHorizontal:14,marginVertical:10,fontSize:15}} >
-         Order Total
-        </Text>
-        <Text style={{marginHorizontal:14,marginVertical:15,fontSize:15}}>
+        <View style={{ borderColor: "#00000870", borderBottomWidth: 0.5 }} />
+        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+          <Text
+            style={{ marginHorizontal: 14, marginVertical: 10, fontSize: 15 }}
+          >
+            Order Total
+          </Text>
+          <Text
+            style={{ marginHorizontal: 14, marginVertical: 15, fontSize: 15 }}
+          >
             175
-        </Text>
-       </View>
-
+          </Text>
+        </View>
       </View>
-
+      <View
+        style={{
+          alignItems: "center",
+          justifyContent: "center",
+          height: 25,
+          backgroundColor: "#00000010",
+        }}
+      >
+        <Text style={{ fontSize: 11 }}>
+          Clicking on 'Continue' will not deduct any money
+        </Text>
+      </View>
+      <View style={{ flexDirection: "row", justifyContent: "space-around" }}>
+        <View>
+          <Text style={{ margin: 13, fontSize: 16, marginLeft: 16 }}>₹214</Text>
+          <Text style={{ marginHorizontal: 13, color: "#f43397" }}>
+            VIEW PRICE DETAILS
+          </Text>
+        </View>
+        <TouchableOpacity>
+          <View
+            style={{
+              backgroundColor: "#f43397",
+              width: 180,
+              height: 50,
+              textAlign: "center",
+              justifyContent: "center",
+              alignItems: "center",
+              borderRadius: 5,
+              margin: 13,
+            }}
+          >
+            <Text style={{ color: "white" }}>Continue</Text>
+          </View>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
