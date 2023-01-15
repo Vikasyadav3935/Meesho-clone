@@ -2,18 +2,25 @@ import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import Entypo from "react-native-vector-icons/Entypo";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import CircleLine from "./CircleLine";
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import { ScrollView } from "react-native-gesture-handler";
+import Ionicons from 'react-native-vector-icons/Ionicons'
 
-
-const Cart = () => {
+const Summary = () => {
   return (
     <View style={{ backgroundColor: "#ffff" }}>
       <CircleLine />
+     <ScrollView>
+      <View style={{ marginTop: 64 ,alignItems:'center',height:50,flexDirection:'row',borderWidth:.4,borderColor:'#00000040'}}>
+        <Text style={{marginHorizontal:15}}><MaterialCommunityIcons  name='truck-delivery-outline' size={30} /></Text>
+        <Text>Estimated Delivery by Sunday, 22nd Jan</Text>
+      </View>
 
-      <View style={{ marginTop: 60 }}>
+      <View >
         <View
           style={{
             flexDirection: "row",
-            marginVertical: 8,
+            marginBottom: 8,
             justifyContent: "space-around",
           }}
         >
@@ -66,6 +73,7 @@ const Cart = () => {
               </Text>
             </View>
           </View>
+          
         </View>
 
         <View
@@ -87,19 +95,35 @@ const Cart = () => {
           </Text>
         </View>
       </View>
-      <View
-        style={{
-          flexDirection: "row",
-          justifyContent: "space-between",
-          borderColor: "#00000820",
-          borderBottomWidth: 7,
-        }}
-      >
-        <Text style={{ margin: 15 }}>Wishlist</Text>
-        <Text style={{ margin: 15 }}>
-          <Entypo name="chevron-right" size={20} color="#0000008400" />
-        </Text>
+      <View style={{borderColor: "#00000820",
+          borderBottomWidth: 7,}}>
+        <View style={{flexDirection:'row',alignItems:'center'}}>
+        <Text style={{marginHorizontal:10,marginVertical:6}}><Ionicons name="location-outline" size={24}/></Text>
+        <Text style={{marginHorizontal:0,marginVertical:6}}>Delivery Address</Text>
+        </View>
+        <View style={{flexDirection:'row',}}>
+            <Text style={{marginHorizontal:10,fontSize:13}}>Vikas</Text>
+            <Text style={{fontSize:13}}>6387712911</Text>
+        </View>
+        <View style={{flexDirection:'row',marginHorizontal:10,marginBottom:10,justifyContent:'space-between'}}>
+            <Text style={{fontSize:12,width:'80%'}}>Raithuwa, Darshan Nagar ,Faizabad ,Uttar Pradesh, 224202 </Text>
+            <Text><Entypo name="chevron-right" size={20} /></Text>
+        </View>
+        
       </View>
+       
+       <View  style={{borderColor: "#00000820",
+          borderBottomWidth: 7,}}>
+        <Text style={{marginHorizontal:10,marginVertical:7}}>
+         Payment Mode
+        </Text>
+       <View style={{flexDirection:'row',marginHorizontal:10,justifyContent:'space-between',marginBottom:8,marginTop:8}}>
+        <Text>Cash on Delivery</Text>
+        <Entypo name="chevron-right" size={20} />
+       </View>
+       </View>
+      
+     
 
       <View>
         <Text
@@ -168,15 +192,16 @@ const Cart = () => {
               margin: 13,
             }}
           >
-            <Text style={{ color: "white" }}>Continue</Text>
+            <Text style={{ color: "white" }}>Place Order</Text>
           </View>
         </TouchableOpacity>
       </View>
+      </ScrollView>
     </View>
   );
 };
 
-export default Cart;
+export default Summary;
 
 const styles = StyleSheet.create({
   circleContainer: {
@@ -198,3 +223,4 @@ const styles = StyleSheet.create({
     backgroundColor: "#6200ee",
   },
 });
+

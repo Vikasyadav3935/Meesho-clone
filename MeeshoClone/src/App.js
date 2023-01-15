@@ -3,11 +3,13 @@ import { StyleSheet, Text, View } from 'react-native';
 import Account from './Account';
 import Address from './Address';
 import Cart from './Cart';
+import CartStack from './CartStack';
 import Home from './Home';
 import Payment from './Payment';
 
 
 import Profile from './Profile';
+import Summary from './Summary';
 
 export default function App() {
   return (
@@ -19,7 +21,10 @@ export default function App() {
      {/* <Home/> */}
      {/* <Cart/> */}
      {/* <Address/> */}
-     <Payment/>
+     {/* <CartStack/> */}
+     {/* <Payment/> */}
+     <Summary/>
+     
     </View>
   );
 }
