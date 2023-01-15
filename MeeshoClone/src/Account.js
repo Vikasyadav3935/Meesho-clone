@@ -34,6 +34,7 @@ const Account = () => {
     return (
       <View>
       <ScrollView>
+      
         <View style={{marginHorizontal:20}}>
           <View style={{height:230,justifyContent:'center',alignItems:'center'}}>
            <View style={{borderWidth:1,width:100,height:100,borderRadius:50,marginTop:20}}>
@@ -116,12 +117,13 @@ const Account = () => {
 
         </View>
         {/* ========Make save button sticky ======= */}
-        <View >
+        
+        <View  >
               <View  style={{}} />
               <TouchableOpacity style={{height:50,alignItems:'center',justifyContent:'center',backgroundColor:'#f43397',margin:10,borderRadius:5}}>
                 <Text style={{color:'white'}}>Save</Text>
               </TouchableOpacity>
-            </View>
+        </View>
        
       </ScrollView>
 

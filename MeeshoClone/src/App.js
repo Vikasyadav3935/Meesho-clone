@@ -4,6 +4,7 @@ import Account from './Account';
 import Address from './Address';
 import Cart from './Cart';
 import Home from './Home';
+import Payment from './Payment';
 
 
 import Profile from './Profile';
@@ -17,7 +18,8 @@ export default function App() {
      {/* <Account/> */}
      {/* <Home/> */}
      {/* <Cart/> */}
-     <Address/>
+     {/* <Address/> */}
+     <Payment/>
     </View>
   );
 }
