@@ -2,7 +2,7 @@ import {View,Text,StyleSheet,TextInput, ScrollView, TouchableOpacity} from 'reac
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {useState} from 'react';
 
-const Address=()=>{
+const Address=({navigation})=>{
     
     const [name,setName]=useState(false);
     const [number,setNumber]=useState(false);
@@ -124,7 +124,8 @@ const Address=()=>{
 
 
      <View >
-        <TouchableOpacity style={{elevation:1.5,width:'90%',height:50,justifyContent:'center',alignItems:'center',backgroundColor:'#f43397',marginHorizontal:'4%',marginVertical:'3%',borderRadius:5}}>
+        <TouchableOpacity onPress={()=>navigation.navigate('Payment')}
+         style={{elevation:1.5,width:'90%',height:50,justifyContent:'center',alignItems:'center',backgroundColor:'#f43397',marginHorizontal:'4%',marginVertical:'3%',borderRadius:5}}>
             <Text style={{color:'white'}}>Save Address and Continue</Text>
         </TouchableOpacity>
      </View>

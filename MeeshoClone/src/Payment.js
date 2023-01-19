@@ -1,7 +1,7 @@
-import {View,Text,StyleSheet, ScrollView,TouchableOpacity,Dimensions} from 'react-native';
-import { List } from 'react-native-paper';
+import {View,Text,StyleSheet, ScrollView,TouchableOpacity,Dimensions, Image} from 'react-native';
+import { List ,Checkbox} from 'react-native-paper';
 
-const Payment=()=>{
+const Payment=({navigation})=>{
   const screenHeight = Dimensions.get('screen').height;
  
     return (
@@ -53,24 +53,37 @@ const Payment=()=>{
         title="UPI (Google Pay/PhonePe)"
         style={{borderBottomWidth:.5,borderBottomColor:'#00000070'}}
         left={props => <List.Icon {...props} icon="card-outline" />}>
-        <List.Item title="PhonePe" />
-        <List.Item title="Enter UPI ID" />
+        <List.Item title="PhonePe" 
+        left={()=><Image  source={{uri:'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/phonepe-logo-icon.png'}} style={{width:30,height:30,marginLeft:20}} />}
+        />
+        <List.Item title="Enter UPI ID" 
+         left={()=><Image  source={{uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2fqo9FaqmLGE8Hfo6STqs07quzJuf9I4lvnxWdds&s'}} style={{width:30,height:30,marginLeft:20}} />}
+         
+        />
       </List.Accordion>
 
       <List.Accordion
         title="Wallet"
         style={{borderBottomWidth:.7,borderBottomColor:'#00000070'}}
         left={props => <List.Icon {...props} icon="wallet-outline" />}>
-        <List.Item title="Paytm" />
-        <List.Item title="PhonePe" />
-        <List.Item title="Mobikwik" />
+        <List.Item title="Paytm" 
+         left={()=><Image  source={{uri:'https://download.logo.wine/logo/Paytm/Paytm-Logo.wine.png'}} style={{width:30,height:30,marginLeft:20}} />}
+        />
+        <List.Item title="PhonePe" 
+        left={()=><Image  source={{uri:'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/phonepe-logo-icon.png'}} style={{width:30,height:30,marginLeft:20}} />}
+        />
+        <List.Item title="Mobikwik" 
+        left={()=><Image  source={{uri:'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/mobikwik-logo-icon.png'}} style={{width:30,height:30,marginLeft:20}} resizeMode='contain'/>}
+        />
       </List.Accordion> 
        
       <List.Accordion
         title="Debit/Credit Card"
         style={{borderBottomWidth:.6,borderBottomColor:'#00000070'}}
         left={props => <List.Icon {...props} icon="credit-card-outline" />}>
-        <List.Item title="Add new card" />
+       <List.Item title="Add new card" 
+        left={()=><Image  source={{uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ84PS_Ah12Yf8dToHYkUJ4ajxkWDMWhXKHOFDItA_s&s'}} style={{width:30,height:30,marginLeft:20}} resizeMode='contain'/>}
+        />
      
       </List.Accordion>
 
@@ -78,10 +91,18 @@ const Payment=()=>{
         title="Net Banking"
         style={{borderBottomWidth:.5,borderBottomColor:'#00000070'}}
         left={props => <List.Icon {...props} icon="bank-outline" />}>
-        <List.Item title="State Bank of India" />
-        <List.Item title="Axis Bank" />
-        <List.Item title="ICICI Netbanking" />
-        <List.Item title="HDFC Bank" />
+        <List.Item title="State Bank of India" 
+        left={()=><Image  source={{uri:'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/SBI-logo.svg/2048px-SBI-logo.svg.png'}} style={{width:30,height:30,marginLeft:20}} resizeMode='contain'/>}
+        />
+        <List.Item title="Axis Bank" 
+         left={()=><Image  source={{uri:'https://www.logotaglines.com/wp-content/uploads/2016/08/Axis-Bank-Logo.png'}} style={{width:30,height:30,marginLeft:20}} resizeMode='contain'/>}
+        />
+        <List.Item title="ICICI Netbanking" 
+         left={()=><Image  source={{uri:'https://i.pinimg.com/originals/ff/d5/31/ffd531a6a78464512a97848e14506738.png'}} style={{width:30,height:30,marginLeft:20}} resizeMode='contain'/>}
+        />
+        <List.Item title="HDFC Bank" 
+         left={()=><Image  source={{uri:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HDFC_Bank_Logo.svg/2560px-HDFC_Bank_Logo.svg.png'}} style={{width:30,height:30,marginLeft:20}} resizeMode='contain'/>}
+        />
 
       </List.Accordion>
        
@@ -98,8 +119,12 @@ const Payment=()=>{
         title="Cash on Delivery"
         style={{borderBottomWidth:.5,borderBottomColor:'#00000070'}}
         left={props => <List.Icon {...props} icon="bank-outline" />}>
-        <List.Item title="First item" />
-        <List.Item title="Second item" />
+            <View>
+    <Checkbox.Item label="Item" status="checked" />
+  </View>
+        {/* <List.Item  title='Cash On delivery'
+        
+        /> */}
       </List.Accordion>
       
       <View >
@@ -122,7 +147,7 @@ const Payment=()=>{
             VIEW PRICE DETAILS
           </Text>
         </View>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigation.navigate('Summary')}>
           <View
             style={{
               backgroundColor: "#f43397",

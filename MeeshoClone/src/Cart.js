@@ -1,14 +1,15 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
+import { ScrollView } from "react-native-gesture-handler";
 import Entypo from "react-native-vector-icons/Entypo";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import CircleLine from "./CircleLine";
 
 
-const Cart = () => {
+const Cart = ({navigation}) => {
   return (
     <View style={{ backgroundColor: "#ffff" }}>
       <CircleLine />
-
+       <ScrollView>
       <View style={{ marginTop: 60 }}>
         <View
           style={{
@@ -155,7 +156,9 @@ const Cart = () => {
             VIEW PRICE DETAILS
           </Text>
         </View>
-        <TouchableOpacity>
+        <TouchableOpacity
+        onPress={()=>navigation.navigate('Address')} 
+        >
           <View
             style={{
               backgroundColor: "#f43397",
@@ -172,6 +175,7 @@ const Cart = () => {
           </View>
         </TouchableOpacity>
       </View>
+      </ScrollView>
     </View>
   );
 };

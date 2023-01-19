@@ -1,39 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Account from './Account';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import Address from './Address';
 import Cart from './Cart';
-import CartStack from './CartStack';
-import Home from './Home';
 import Payment from './Payment';
-
-
-import Profile from './Profile';
 import Summary from './Summary';
 
-export default function App() {
-  return (
-    <View style={{marginTop:30,}}>
-   
-      <StatusBar style="auto" />
-      {/* <Profile/> */}
-     {/* <Account/> */}
-     {/* <Home/> */}
-     {/* <Cart/> */}
-     {/* <Address/> */}
-     {/* <CartStack/> */}
-     {/* <Payment/> */}
-     <Summary/>
-     
-    </View>
-  );
+ const Stack=createStackNavigator();
+const App=()=>{
+    return <NavigationContainer>
+        <Stack.Navigator>
+            <Stack.Screen name='Cart' component={Cart} />
+            <Stack.Screen name="Address" component={Address} />
+            <Stack.Screen name="Payment" component={Payment} />
+            <Stack.Screen  name='Summary' component={Summary} />
+        </Stack.Navigator>
+    </NavigationContainer>
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
