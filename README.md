@@ -16,24 +16,24 @@ In our construct week project that happens at Masai end of every unit, where stu
     
 
 ### HOMEPAGE
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1674146520909/3d5cfcd9-f4d7-41ac-baad-ac8828f41f2b.jpeg" alt="login"/>
 
-![HOMEPAGE](https://cdn.hashnode.com/res/hashnode/image/upload/v1674146520909/3d5cfcd9-f4d7-41ac-baad-ac8828f41f2b.jpeg align="center")
 
 ### CATEGORIES
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1674146708328/e46928b1-e73f-495a-8bfc-e24cb19be08f.jpeg" alt="login"/>
 
-![CATEGORIES](https://cdn.hashnode.com/res/hashnode/image/upload/v1674146708328/e46928b1-e73f-495a-8bfc-e24cb19be08f.jpeg align="center")
 
 ### PRODUCT PAGE
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1674147169613/72e47b6e-5e98-401f-86eb-bf9c69c1447d.jpeg" alt="login"/>
 
-![PRODUCT](https://cdn.hashnode.com/res/hashnode/image/upload/v1674147169613/72e47b6e-5e98-401f-86eb-bf9c69c1447d.jpeg align="center")
 
 ### EDIT PROFILE
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1674147332067/55dea8a6-15b5-4d66-a8b3-63f059478061.jpeg" alt="login"/>
 
-![EDIT PROFILE](https://cdn.hashnode.com/res/hashnode/image/upload/v1674147332067/55dea8a6-15b5-4d66-a8b3-63f059478061.jpeg align="center")
 
 ### ACCOUNT
+<img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1674147616562/315a7cda-27c7-4db6-87d9-bcf54af9f147.jpeg" alt="login"/>
 
-![ACCOUNT](https://cdn.hashnode.com/res/hashnode/image/upload/v1674147616562/315a7cda-27c7-4db6-87d9-bcf54af9f147.jpeg align="center")
 
 ### TECH STACK
 
