@@ -12,7 +12,7 @@ In our construct week project that happens at Masai end of every unit, where stu
 
 * VIKAS YADAV
     
-* SHAKTI YADAV
+* SHAKTI MODAK
     
 
 ### HOMEPAGE
